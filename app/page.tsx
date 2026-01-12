@@ -27,7 +27,8 @@ export default function Home() {
     setError("");
     setResult([]);
     try {
-      const response = await fetch("http://127.0.0.1:8000/recommend", {
+      //const response = await fetch("http://127.0.0.1:8000/recommend", 
+      const response = await fetch("https://your-api.zeabur.app/recommend",{
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
